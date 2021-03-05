@@ -125,11 +125,11 @@ namespace BaiduTranslateAPP
             // 目标语言
             string to = dstLang;
             // 改成您的APP ID
-            string appId = "20210122000678251";
+            string appId = "";
             Random rd = new Random();
             string salt = rd.Next(100000).ToString();
             // 改成您的密钥
-            string secretKey = "3rARl9A_BlZY82qf9Wop";
+            string secretKey = "";
             string sign = EncryptString(appId + q + salt + secretKey);
             string url = "http://api.fanyi.baidu.com/api/trans/vip/translate?";
             url += "q=" + HttpUtility.UrlEncode(q);
